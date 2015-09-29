@@ -1,3 +1,10 @@
+/* Things this code doesn't handle:
+
+* If ipinfo.io doesn't return a country that we expect.
+* We can't choose the order of the countries in the dropdown.
+
+*/
+
 $(function () {
     var countries = {
         GB: { url: 'UK URL',
