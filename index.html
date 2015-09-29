@@ -12,6 +12,8 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/shoppr.js"></script>
 	</head>
 	<body>
 
@@ -19,12 +21,12 @@
 			<section id="banner">
 				<h2><strong>Charity Shoppr</strong></h2>
 				<p>Do your shopping, give to charity</p>
-				<form class="search-form" method="get" action="http://www.amazon.ca/exec/obidos/external-search">
+				<form id="amazon-form" class="search-form" method="get" action="http://www.amazon.ca/exec/obidos/external-search">
 	              <div class="form-label-above">
 	                  <label for="keyword">Search Amazon.co.uk through the 'Shop for Charity' store here:</label>
 	              </div>
 	              <input type="text" class="header-search-bar" name="keyword" size="10" value="" style="width: 400px;">
-	              <input type="hidden" name="tag" value="effectivecharities-21">
+	              <input id="amazon-tag" type="hidden" name="tag" value="effectivecharities-21">
 	              <button type="submit" class="header-search-button button special" value="Go" class="button special">Search</button>
 	          	</form>
 			</section>
